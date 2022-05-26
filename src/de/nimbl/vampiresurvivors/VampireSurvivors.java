@@ -1,21 +1,14 @@
 package de.nimbl.vampiresurvivors;
 
-import com.raylib.java.Raylib;
-import com.raylib.java.core.Color;
+import de.nimbl.vampiresurvivors.game.Game;
 
 public class VampireSurvivors {
 
     public static void main(String[] args) {
-        Raylib ray = new Raylib();
-        ray.core.InitWindow(800, 600, "Test");
+        Game game = new Game();
 
-        while(!ray.core.WindowShouldClose()) {
-            ray.core.BeginDrawing();
-            ray.core.ClearBackground(Color.DARKGRAY);
-            ray.core.EndDrawing();
-        }
-
-        ray.core.CloseWindow();
+        game.start();
+        game.gameLoop();
     }
 
 }
