@@ -19,13 +19,20 @@ public class GameFiles {
     }
 
     public static void loadItemTextures() {
-        items.put(0, new Texture2D("res/textures/items/penis.png"));
     }
 
     public static void loadEntityTextures() {
         entities.put(0, new Texture2D("res/textures/entities/player_damaged.png"));
         entities.put(1, new Texture2D("res/textures/entities/player.png"));
         entities.put(2, new Texture2D("res/textures/entities/bat.png"));
+
+        entities.put(3, new Texture2D("res/textures/items/penis.png"));
+
+
+        Texture2D garlicTexture = new Texture2D("res/textures/items/garlic.png");
+        garlicTexture.setWidth(garlicTexture.getWidth() * 4);
+        garlicTexture.setHeight(garlicTexture.getHeight() * 4);
+        entities.put(4, garlicTexture);
     }
 
     public static void loadMapTextures() {

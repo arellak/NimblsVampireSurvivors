@@ -1,4 +1,4 @@
-package de.nimbl.vampiresurvivors.items;
+package de.nimbl.vampiresurvivors.items.weapons;
 
 public enum WeaponType {
     PENIS("ITEM_PENIS"),

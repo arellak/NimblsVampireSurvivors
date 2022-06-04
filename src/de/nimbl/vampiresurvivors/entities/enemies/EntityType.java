@@ -3,7 +3,11 @@ package de.nimbl.vampiresurvivors.entities.enemies;
 public enum EntityType { //Should be EntityType
 
     PLAYER("ENT_PLAYER"),
-    BAT("ENT_BAT");
+    BAT("ENT_BAT"),
+
+    GARLIC("ENT_GARLIC")
+
+    ;
 
     private final String textID;
 

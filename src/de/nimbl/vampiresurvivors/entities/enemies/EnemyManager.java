@@ -48,7 +48,6 @@ public class EnemyManager {
 
                 enemy.updateHealth(-player.getDamage());
                 player.updateHealth(-enemy.getDamage());
-                System.out.println(enemy.getHealth());
             } else {
                 if(count > 0) {
                     count--;
